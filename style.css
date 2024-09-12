@@ -1,19 +1,24 @@
+/* Importación de la fuente desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Reset de estilos globales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos generales para el cuerpo de la página */
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #c5d1f3;
 }
 
+/* Estilos para el encabezado */
 header {
   width: 100%;
   height: 10vh;
@@ -31,6 +36,7 @@ header h1 {
   font-size: 1.5rem;
 }
 
+/* Estilo de la sección principal */
 section {
   display: flex;
   flex-wrap: wrap;
@@ -39,12 +45,13 @@ section {
   gap: 40px;
 }
 
+/* Estilos para artículos individuales */
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid #ddd;
-  background-color: #ebeef7;
+  background-color: #fefefe; /* #c5d1f3 */
   padding: 20px;
   width: 30%;
   box-shadow: 0 4px 8px rgba(0, 2, 9, 0.3);
@@ -52,9 +59,11 @@ article {
 }
 
 article h2 {
-  color: #020819;
+  color: #020f36;
   margin-bottom: 10px;
   text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #c5d1f3;
 }
 
 article p {
@@ -72,7 +81,11 @@ article img:hover {
   transform: scale(1.02);
 }
 
-/* Estilo para imágenes en pantalla completa */
+/* Estilo para página del articulo */
+.container-img {
+  background-color: #ffffff;
+}
+
 .title-img {
   width: 100%;
   height: 10vh;
@@ -86,6 +99,7 @@ article img:hover {
   justify-content: center;
 }
 
+/* Estilo para la sección de imagen de pantalla completa */
 .full-image {
   display: flex;
   flex-direction: column;
@@ -102,6 +116,7 @@ article img:hover {
   text-align: justify;
 }
 
+/* Estilos para el pie de página */
 footer {
   width: 100%;
   background-color: #020f36;
@@ -114,7 +129,8 @@ footer p {
   text-align: center;
 }
 
-/* Media Queries */
+/* Media Queries: Ajustes de estilo para pantallas de diferentes tamaños */
+/* Estilo para pantallas entre 600px y 900px de ancho */
 @media (min-width: 600px) and (max-width: 900px) {
   header h1 {
     margin-top: 5px;
@@ -126,6 +142,7 @@ footer p {
   }
 }
 
+/* Estilo para pantallas de menos de 600px de ancho */
 @media (max-width: 599px) {
   header h1 {
     margin-top: 0px;
