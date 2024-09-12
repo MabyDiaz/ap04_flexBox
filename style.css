@@ -71,18 +71,25 @@ article p {
   text-indent: 20px;
 }
 
-article img {
-  max-width: 100%;
+/* Estilo del contenedor de la imagen dentro del artículo */
+article .image-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+
+article .image-container img {
+  width: 100%;
   height: auto;
-  margin-top: 15px;
-  transition: all 1s ease;
+  transition: transform 1s ease;
 }
 
-article img:hover {
-  transform: scale(1.02);
+article .image-container:hover img {
+  transform: scale(1.1);
 }
 
-/* Estilo para página del articulo */
+/* Estilo para pantalla completa del artículo */
 .container-img {
   background-color: #ffffff;
 }
